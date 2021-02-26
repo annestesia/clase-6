@@ -92,8 +92,74 @@ footer{
 
 /* MEDIA QUIERY */
 
-@media all and ( max-width: 1000;) {
+@media all and (max-width: 1000px) {
     .navegacion ul {
-        flex-wrap: ;
+        flex-wrap: wrap;
     }
+    .navegacion li {
+        flex: 1 1 50%;
+    }
+.items{
+    flex-wrap: wrap;
+
 }
+.item{
+    flex: 1 1 50%;
+margin: 10 30px;
+align-self: stretch;
+max-height: 300px;
+}
+}
+@media all and (max-width: 1000px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .navegacion ul {
+       display: none;
+    }
+    .navegacion ul.open {
+        display: flex;
+    }
+      .wrapper > * {
+        order: 999;
+    }
+    .toggle{
+        display: block;
+    }
+    .navegacion li {
+        flex-basis:  100%;
+    }
+    .navegacion { 
+        order: 1;
+    }
+
+  
+    .top{
+        order: 2;
+    }
+    .details {
+        order: 3;
+    }
+.items{
+    flex-wrap: wrap;
+
+}
+.item{
+    flex: 1 1 100%;
+margin: 10 30px;
+align-self: stretch;
+max-height: 300px;
+}
+
+.signup { 
+    display: flex;
+flex-direction:column;
+}
+.signup input{
+    margin: 5px;
+}
+
+}
+
+

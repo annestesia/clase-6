@@ -45,7 +45,7 @@
            </div>
         </div>
     
-        <section class="section">
+        <section class="details">
             <p>texo</p>
             <p>hola</p>
             <p>xi</p>
@@ -61,7 +61,16 @@
         <footer>
             <p>&copy;NUNCA BABY!!! </p>
         </footer>
-    
+    </div>
+    <script>
+        const toggle = document.querySelector('.toggle');
+        console.log(toggle);
+        const navUL = document.querySelector('nav.navegacion ul ');
+        console.log(navUL);
+        toggle.addEventListener ('click', () => {
+            navUL.classList.toggle('open');
+        }) ;
+    </script>
 
 </body>
 </html>
